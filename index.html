@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi there</title>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <form action="mailto:v.istrati@developmentaid.org" method="POST" enctype=”multipart/form-data” name=”EmailForm”>
+        <div class="form-group">
+          <label for="FirstName">First Name</label>
+          <input id="text" type="text" name="FirstName" placeholder="first name">
+        </div>
+        <div class="form-group">
+          <label for="LastName">Last Name</label>
+          <input id="username" type="text" name="LastName" placeholder="last name">
+        </div>
+        <div class="form-group">
+          <label for="email">Adress:</label>
+          <input type="email" name="email" id="email" placeholder="adress">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <select id="city-select">
+            <option value="Chisinau">Chisinau</option>
+            <option value="Calarasi">Calarasi</option>
+            <option value="Straseni">Straseni</option>
+            <option value="Soroca">Soroca</option>
+            <option value="Ungheni">Ungheni</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="password" required>
+        </div>
+        <div class="form-group">
+          <label for="smoking">Do you smoke?</label>
+          <input type="checkbox" name="smoking" id="smoking" required>
+        </div>
+        <div class="form-group">
+          <p>How many cups of coffee you drink a day?</p>
+          <br>
+          <label for="0-2">0 to 2 Cup(s)</label>
+          <input type="radio" name="coffees-per-day" id="0-2" value="0-2">
+          <label for="2-4">2 to 4 Cups</label>
+          <input type="radio" name="coffees-per-day" id="2-4" value="2-4">
+          <br>
+          <label for="4-8">4 to 8 Cups</label>
+          <input type="radio" name="coffees-per-day" id="4-8" value="4-8">
+          <label for="8-16">8 to 16 Cups</label>
+          <input type="radio" name="coffees-per-day" id="8-16">
+        </div>
+        <div class="form-group">
+          <label for="personal-computer">Do you own a personal computer</label>
+          <select name="personal-computer" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>How long would it take to make an HTML Form?</p>
+          <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          Coments:
+          <br>
+          <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <div class="buttons">
+            <input type="reset" value="Reset Form">
+            <input type="submit" value="Send Survey">
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
